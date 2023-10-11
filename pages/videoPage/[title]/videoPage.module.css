@@ -1,0 +1,243 @@
+.wrapper {
+    background-color: black;
+    height: 100%;
+}
+
+.errorPageWrapper {
+    height: 100vh;
+}
+
+.errorText {
+    display: flex;
+    flex-direction: column;
+}
+
+.errorTitle {
+    font-size: 50px;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.errorSubTitle {
+    font-size: 23px;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.modal {
+    width: 50%;
+    height: 700px;
+    min-width: 550px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+
+    position: absolute;
+    top: 10%;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+
+    background-color: rgb(44, 44, 44);
+
+    font-family: sans-serif;
+    font-weight: 600;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid var(--shadow10);
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.videoPlayer {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.modalBody {
+    padding: 0 50px;
+}
+
+.modalBodyContent {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    column-gap: 2em;
+}
+
+.col1 {
+    max-height: 230px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.publishTime {
+    font-size: 1.125rem /* 18px */;
+    line-height: 1.75rem /* 28px */;
+    margin-bottom: 8px;
+    color: var(--green10);
+}
+
+.text {
+    font-size: 1.125rem /* 18px */;
+    line-height: 1.75rem /* 28px */;
+    color: var(--white10);
+}
+
+.description {
+    margin-bottom: 0.5rem /* 8px */;
+    margin-top: 0.75rem /* 12px */;
+    line-height: 20px;
+}
+
+.col2 {
+    color: var(--white10);
+    line-height: 1.75rem /* 28px */;
+    display: flex;
+    flex-direction: column;
+}
+
+.subText {
+    font-size: 0.875rem /* 14px */;
+    line-height: 1.25rem /* 20px */;
+    margin-left: 0px;
+    overflow-wrap: break-word;
+}
+
+.subTextWrapper {
+    margin-top: 1.5rem /* 24px */;
+}
+
+.textColor {
+    color: var(--gray10);
+}
+
+.channelTitle {
+    color: var(--white30);
+    margin: 0px;
+}
+
+@media (max-width: 600px) {
+    .modal {
+        min-width: 450px;
+        height: 100%;
+
+        overflow: scroll;
+    }
+
+    .modalBody {
+        padding: 0 25px;
+    }
+
+    .col1 {
+        max-height: none;
+    }
+}
+
+/** Like **/
+
+.likeDislikeBtnWrapper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0.75rem /* 12px */;
+    position: relative;
+    bottom: 20%;
+    padding-left: 16px;
+}
+
+.likeBtn {
+    border-color: var(--white10);
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--gray40);
+    border-radius: 9999px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+/* 
+.dislikeBtn {
+    border-color: var(--white10);
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--gray40);
+    border-radius: 9999px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+} */
+
+.likeBtnActive {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 9999px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--green10);
+    border-color: var(--green10);
+
+    transition: 0.7s;
+}
+
+/* .dislikeBtnActive {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 9999px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(224, 57, 57);
+    border-color: rgb(224, 57, 57);
+} */
+
+.liked {
+    animation: likeAnimation .7s ease-in-out forwards;
+}
+
+@keyframes likeAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px) rotate(-30deg);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* .disliked {
+    animation: dislikeAnimation 1s ease-in-out forwards;
+} */
+
+/* @keyframes dislikeAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(30px) rotate(-30deg);
+    }
+    50% {
+        transform: translateY(20px) rotate(5deg);
+    }
+    75% {
+        transform: translateY(30px) rotate(-30deg);
+    }
+    100% {
+        transform: translateY(0);
+    }
+} */
+
+.likeBtnWrapper {
+    margin-right: 8px;
+}
+
+.SignInText {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.SignInLink {
+    text-decoration: underline;
+}

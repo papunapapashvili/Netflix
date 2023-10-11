@@ -1,0 +1,265 @@
+.wrapper {
+    width: 100%;
+
+    background-image: linear-gradient(to bottom, var(--gradient-stops));
+
+    color: var(--white10);
+
+    position: fixed;
+    top: 0px;
+    z-index: 700;
+
+    --gradient-from: var(--black);
+    --gradient-stops: var(--gradient-from), var(--gradient-to, rgba(0, 0, 0, 0));
+    user-select: none;
+}
+
+.blurryWrapper {
+    height: 500px;
+    overflow: hidden;
+
+    transition: all 0.5s;
+    background-image: linear-gradient(to bottom, var(--gradient-stops));
+    --gradient-from: var(--black);
+}
+
+.logo {
+    padding-left: 1rem /* 16px */;
+    padding-right: 1rem /* 16px */;
+    padding: 1.25rem /* 20px */;
+
+    display: flex;
+}
+
+.logoLink {
+    color: var(--white10);
+
+    font-weight: 500;
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.navItems {
+    width: 50%;
+    margin-left: 1.5rem /* 24px */;
+
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 0.875rem /* 14px */;
+    font-size: 16px;
+
+    line-height: 1.25rem /* 20px */;
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    white-space: nowrap;
+}
+
+.navItem {
+    margin-right: 12px;
+
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navItem2 {
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.navItem3 {
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navContainer {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.usernameBtn {
+    width: 100%;
+
+    color: var(--white);
+
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.usernameIcon {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+}
+
+.username {
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.dropDownIcon {
+    color: white;
+}
+
+.navDropdown {
+    margin-top: 8px;
+    padding: 10px 8px 0 6px;
+
+    background-color: var(--black50);
+    border-width: 1px;
+    border-radius: 0.25rem /* 4px */;
+    border-color: var(--blue);
+    box-shadow: var(--shadow30, 0 0 #0000), var(--ring-shadow, 0 0 #0000), var(--shadow30);
+
+    color: var(--white);
+
+    position: absolute;
+
+    white-space: nowrap;
+}
+
+.navDropdownMobile {
+    margin-top: 8px;
+    padding: 10px 8px 0 8px;
+
+    white-space: nowrap;
+    position: absolute;
+    right: 18px;
+
+    color: var(--white);
+
+    background-color: var(--black50);
+    border-width: 1px;
+    border-radius: 0.25rem /* 4px */;
+    border-color: var(--blue);
+    box-shadow: var(--shadow30, 0 0 #0000), var(--ring-shadow, 0 0 #0000), var(--shadow30);
+}
+
+.linkName {
+    padding-left: 0.5rem /* 8px */;
+    padding-right: 0.5rem /* 8px */;
+
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+    border-radius: 0.25rem /* 4px */;
+    display: block;
+
+    font-family: sans-serif;
+    font-size: 1rem /* 16px */;
+    line-height: 1.25rem /* 20px */;
+    cursor: pointer;
+}
+
+.linkName:hover {
+    text-decoration: underline;
+}
+
+.lineWrapper {
+    padding-top: 0.5rem /* 8px */;
+    padding-bottom: 0.5rem /* 8px */;
+}
+
+.drawerBtn {
+    display: flex;
+    justify-content: flex-end;
+
+    cursor: pointer;
+}
+
+.drawer {
+    width: 0;
+    height: 100%;
+    padding-top: 60px;
+
+    background-color: rgb(48, 47, 47);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    transition: all 0.5s;
+}
+
+.open {
+    width: 200px;
+}
+
+.drawerContentWrapper {
+    padding: 8px 8px 8px 32px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    bottom: 50px;
+}
+
+.drawerContent {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.drawerContent span:active {
+    color: rgb(153, 149, 149);
+}
+
+.drawerUsername {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        padding-left: 64px;
+        padding-right: 64px;
+        align-items: center;
+    }
+
+    .lo .logoLink {
+        margin-bottom: 0px;
+    }
+
+    .navItems {
+        margin-left: 3rem /* 48px */;
+    }
+
+    .navItem {
+        margin-right: 1.25rem /* 20px */;
+    }
+}
+
+@media (min-width: 500px) {
+    .navItems {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .open {
+        width: 140px;
+    }
+
+    .drawerContentWrapper {
+        padding: 8px 8px 8px 18px;
+    }
+}

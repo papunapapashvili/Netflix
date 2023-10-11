@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "username": "johndoe",
+            "email": "john.doe@gmail.com"
+        },
+        {
+            "username": "janesmith",
+            "email": "jane.smith@gmail.com"
+        },
+        {
+            "username": "alicejohnson",
+            "email": "alice.johnson@gmail.com"
+        },
+        {
+            "username": "bobwilliams",
+            "email": "bob.williams@gmail.com"
+        },
+        {
+            "username": "emilybrown",
+            "email": "emily.brown@gmail.com"
+        },
+        {
+            "username": "papunapapashvili",
+            "email": "papuna.papashvili@gmail.com"
+        }
+    ]
+}
