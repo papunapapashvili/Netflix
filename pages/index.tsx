@@ -6,7 +6,7 @@ import Head from 'next/head'
 import { getDisneyVideos, getDisneyTrailers } from '@/lib/organizedData'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import SectionCards from '@/components/sectionCards/SectionCards'
+import SectionCards from '@/components/sectionCards/sectionCards'
 
 export default function Home() {
     const disneyVideos = getDisneyVideos()
