@@ -4,7 +4,7 @@ import { getDisneyVideos } from '@/lib/organizedData'
 import Card from '@/components/card/Card'
 import { useRouter } from 'next/router'
 import NavBar from '@/components/navBar/NavBar'
-import SectionCards from '@/components/sectionCards/sectionCards'
+import SectionCards from '@/components/sectionCards/SectionCards'
 
 const MyListPage = () => {
     const [storedVideoTitle, setStoredVideoTitle] = useState([])
