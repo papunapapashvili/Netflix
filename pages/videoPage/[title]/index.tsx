@@ -108,6 +108,8 @@ const VideoPage = () => {
         }
     }
 
+    console.log('video:', video?.id.videoId == undefined)
+
     return (
         <div className={styles.wrapper}>
             {storedUsername || name ? (
@@ -139,7 +141,6 @@ const VideoPage = () => {
                                     title='YouTube video player'
                                     allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
                                 ></iframe>
-
                                 <div className={styles.likeDislikeBtnWrapper}>
                                     <button
                                         onClick={() => handleVideoLike(title)}
