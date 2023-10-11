@@ -62,8 +62,9 @@ const MyListPage = () => {
                             <Card
                                 key={index}
                                 onClick={() => router.push(`/videoPage/${video?.title}`)}
-                                imgUrl={video?.imgUrl}
+                                imgUrl={video ? video?.imgUrl : '/static/error-image.png'}
                                 size={'large'}
+                                id={index}
                             />
                         </div>
                     ))
