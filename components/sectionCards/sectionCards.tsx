@@ -1,5 +1,5 @@
 import { FC, useEffect, useRef, useState } from 'react'
-import styles from './sectionCards.module.css'
+import styles from './SectionCards.module.css'
 import Card from '../card/Card'
 import { useRouter } from 'next/router'
 import Image from 'next/image'

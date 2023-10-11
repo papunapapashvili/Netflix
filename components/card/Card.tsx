@@ -1,7 +1,7 @@
 'use client'
 import { FC, useState } from 'react'
 import Image from 'next/image'
-import styles from './card.module.css'
+import styles from './Card.module.css'
 
 import cls from 'classnames'
 import { motion } from 'framer-motion'
