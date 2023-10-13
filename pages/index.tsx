@@ -6,14 +6,12 @@ import styles from './home.module.css'
 import Banner from '../components/banner/Banner'
 import NavBar from '../components/navBar/NavBar'
 import SectionCards from '../components/sectionCards/SectionCards'
-
 import { getDisneyVideos, getDisneyTrailers } from '@/lib/organizedData'
 
 export default function Home() {
     const disneyVideos = getDisneyVideos()
     const trailers = getDisneyTrailers()
     const router = useRouter()
-    // test comment
     const { name } = router.query
     const [storedUsername, setStoredUsername] = useState('')
     const status = name || storedUsername ? 'Sign Out' : 'Sign In'
