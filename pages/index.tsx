@@ -6,12 +6,13 @@ import Head from 'next/head'
 import { getDisneyVideos, getDisneyTrailers } from '@/lib/organizedData'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import SectionCards from '@/components/sectionCards/SectionCards'
+import SectionCards from '../components/sectionCards/sectionCards'
 
 export default function Home() {
     const disneyVideos = getDisneyVideos()
     const trailers = getDisneyTrailers()
     const router = useRouter()
+    // test comment
     const { name } = router.query
     const [storedUsername, setStoredUsername] = useState('')
     const status = name || storedUsername ? 'Sign Out' : 'Sign In'
