@@ -1,12 +1,13 @@
-import styles from './home.module.css'
-import Banner from '@/components/banner/Banner'
-import NavBar from '@/components/navBar/NavBar'
-
-import Head from 'next/head'
-import { getDisneyVideos, getDisneyTrailers } from '@/lib/organizedData'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import SectionCards from '@/components/sectionCards/SectionCards'
+import Head from 'next/head'
+
+import styles from './home.module.css'
+import Banner from '../components/banner/Banner'
+import NavBar from '../components/navBar/NavBar'
+import SectionCards from '../components/sectionCards/SectionCards'
+
+import { getDisneyVideos, getDisneyTrailers } from '@/lib/organizedData'
 
 export default function Home() {
     const disneyVideos = getDisneyVideos()
