@@ -5,8 +5,7 @@ import Head from 'next/head'
 import styles from './home.module.css'
 import Banner from '../components/banner/Banner'
 import NavBar from '../components/navBar/NavBar'
-import SectionCards from '../components/sectionCards/SectionCards'
-
+import SectionCards from '../components/sectionCards/sectionCards'
 import { getDisneyVideos, getDisneyTrailers } from '@/lib/organizedData'
 
 export default function Home() {
